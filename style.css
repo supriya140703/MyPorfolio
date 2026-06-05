@@ -1,0 +1,334 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    overflow-x:hidden;
+}
+
+/* =========================
+   SECTION BACKGROUNDS
+========================= */
+
+.about,
+.education,
+.skills,
+.projects,
+.experience,
+.contact{
+    background-color:#d1e2f5;
+}
+
+section{
+    padding:90px 0;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2{
+    position:relative;
+    margin-bottom:50px;
+}
+
+h2::after{
+    content:'';
+    width:100px;
+    height:4px;
+    background:#50edfb;
+    display:block;
+    margin:10px auto;
+    border-radius:10px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(10px);
+}
+
+.nav-link{
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#48d5f9 !important;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+#home{
+    min-height:100vh;
+    background:url('./image/BackgroundImage.jpg') center/cover no-repeat;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.animate-text{
+    animation:slideInLeft 2s ease;
+}
+
+@keyframes slideInLeft{
+    from{
+        opacity:0;
+        transform:translateX(-80px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-img{
+    width:350px;
+    border-radius:50%;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    animation:float 4s ease-in-out infinite;
+    transition:.5s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-20px);}
+    100%{transform:translateY(0);}
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.custom-btn{
+    background:#064c7e;
+    color:#fff;
+    border:none;
+}
+
+.custom-btn:hover{
+    background:#05385d;
+    color:#fff;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icons{
+    margin-top:20px;
+}
+
+.social-icons a{
+    transition:.4s;
+}
+
+.social-icons a:hover{
+    transform:scale(1.2);
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-img{
+    width:400px;
+    height:450px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.about-img:hover{
+    transform:scale(1.05);
+}
+
+.about-content{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.about-content h3{
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    color:#555;
+    line-height:1.8;
+}
+
+.about-info{
+    margin-top:20px;
+}
+
+.about-info div{
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+/* =========================
+   EDUCATION CARDS
+========================= */
+
+.education .card{
+    border:none;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.education .card:hover{
+    transform:translateY(-10px);
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.4s;
+    height:100%;
+}
+
+.skill-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.skill-card i{
+    font-size:3rem;
+    color:#70bad7;
+    margin-bottom:15px;
+    display:block;
+    transition:.4s;
+}
+
+.skill-card:hover i{
+    transform:scale(1.2) rotate(8deg);
+}
+
+.skill-card h5{
+    font-weight:700;
+}
+
+.skill-card p{
+    color:#666;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.project-card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+.experience-card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.experience-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact form{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.form-control{
+    padding:12px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#f8f9fa;
+    font-weight:600;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .hero{
+        text-align:center;
+    }
+
+    .profile-img{
+        width:250px;
+        margin-top:30px;
+    }
+
+    .about-img{
+        width:100%;
+        height:auto;
+    }
+}

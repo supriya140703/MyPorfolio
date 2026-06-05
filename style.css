@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
+/*GLOBAL STYLES */
 
 *{
     margin:0;
@@ -34,9 +32,7 @@ section{
     padding:90px 0;
 }
 
-/* =========================
-   HEADINGS
-========================= */
+/*  HEADINGS */
 
 h2{
     position:relative;
@@ -53,9 +49,7 @@ h2::after{
     border-radius:10px;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 
 .navbar{
     position:sticky;
@@ -73,9 +67,7 @@ h2::after{
     color:#48d5f9 !important;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/*HERO SECTION */
 
 #home{
     min-height:100vh;
@@ -103,9 +95,7 @@ h2::after{
     }
 }
 
-/* =========================
-   PROFILE IMAGE
-========================= */
+/* PROFILE IMAGE */
 
 .profile-img{
     width:350px;
@@ -125,9 +115,7 @@ h2::after{
     100%{transform:translateY(0);}
 }
 
-/* =========================
-   BUTTONS
-========================= */
+/* BUTTONS */
 
 .custom-btn{
     background:#064c7e;
@@ -140,9 +128,7 @@ h2::after{
     color:#fff;
 }
 
-/* =========================
-   SOCIAL ICONS
-========================= */
+/* SOCIAL ICONS */
 
 .social-icons{
     margin-top:20px;
@@ -156,10 +142,7 @@ h2::after{
     transform:scale(1.2);
 }
 
-/* =========================
-   ABOUT SECTION
-========================= */
-
+/* About Section */
 .about-img{
     width:400px;
     height:450px;
@@ -199,10 +182,7 @@ h2::after{
     font-size:16px;
 }
 
-/* =========================
-   EDUCATION CARDS
-========================= */
-
+/* education card*/
 .education .card{
     border:none;
     box-shadow:0 5px 20px rgba(0,0,0,.1);
@@ -213,10 +193,7 @@ h2::after{
     transform:translateY(-10px);
 }
 
-/* =========================
-   SKILLS
-========================= */
-
+/* Skills */
 .skill-card{
     background:#fff;
     padding:30px;
@@ -251,9 +228,7 @@ h2::after{
     color:#666;
 }
 
-/* =========================
-   PROJECTS
-========================= */
+/* Projects */
 
 .project-card{
     border:none;
@@ -272,9 +247,7 @@ h2::after{
     box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
-/* =========================
-   CERTIFICATIONS
-========================= */
+/*CERTIFICATIONS */
 
 .experience-card{
     border:none;
@@ -288,9 +261,7 @@ h2::after{
     box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact form{
     background:#fff;
@@ -303,18 +274,14 @@ h2::after{
     padding:12px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
     background:#f8f9fa;
     font-weight:600;
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+/*MOBILE RESPONSIVE */
 
 @media(max-width:768px){
 
